@@ -38,12 +38,13 @@ This project is a RESTful web application that serves as a simplified version of
 ## Get Started
 <ul>
   <li>Clone the project repository onto your local machine</li>
-  <li>Create new empty schema in your DB</li>
+  <li>Install MySQL if needed</li>
+  <li>Create new empty schema in your DB via command <code>CREATE SCHEMA `cinema` DEFAULT CHARACTER SET utf8;</code></li>
   <li>Replace the values of the <code>YOUR_DRIVER</code>, <code>YOUR_DATABASE_URL</code>, <code>YOUR_USERNAME</code> and <code>YOUR_PASSWORD</code> properties 
   with the appropriate values for your database setup in [db.properties](src/main/resources/db.properties)</li>
   <li>Build the project using Maven: <code>mvn clean install</code></li>
-  <li>Configure Apache Tomcat Artifact: war-exploded artifact, Application context: "/"</li>
-  <li>You can login with an exsiting acounts<li>
+  <li>Configure Apache Tomcat, select war-exploded artifact and set application context: "/"</li>
+  <li>You can log in with an existing accounts<li>
   <ul>
     <li>login:admin@i.ua, password:admin1234 with ADMIN permissions</li> 
     <li>login:user@i.ua, password:user1234 with USER permissions</li>
@@ -53,21 +54,23 @@ This project is a RESTful web application that serves as a simplified version of
 
 ## Technologies
 <ul>
-  <li>Java 17</li>
-  <li>Apache Maven</li>
-  <li>Apache Tomcat - version 9.0.73</li>
-  <li>MySQL</li>
-  <li>Hibernate</li>
-  <li>Spring Core</li>
-  <li>Spring Web Mvc</li>
-  <li>Spring Security</li>
-  <li>JWT</li>
+  <li>Java <code>17.0.6</code></li>
+  <li>Apache Maven<code>3.9.1</code></li>
+  <li>Apache Tomcat<code>9.0.73</code></li>
+  <li>MySQL Connector<code>8.0.32</code></li>
+  <li>Hibernate<code>5.6.14.Final</code></li>
+  <li>Spring Core<code>5.3.20</code></li>
+  <li>Spring Web MVC<code>5.3.20</code></li>
+  <li>Spring Security<code>5.6.10</code></li>
+  <li>Hibernate Validator<code>6.1.6.Final</code></li>
+  <li>Javax Servlets<code>4.0.1</code></li>
+  <li>Javax Annotations<code>1.3.2</code></li>
 </ul>
 
 ## Structure
 <ul>
-  <li>CONFIG: configurating Spring</li>
-  <li>CONTRELLER (endpoints): </li>
+  <li>CONFIG: configure Spring</li>
+  <li>CONTROLLER (endpoints): </li>
   <ul>
     <li>Registration - <code>POST /register</code> - registration of new user <code>ALL</code></li>
     <li>Login - <code>POST /login</code> - authentication <code>ALL</code></li>
@@ -106,18 +109,18 @@ This project is a RESTful web application that serves as a simplified version of
   </ul>
   <li>DAO: Data Access Object interfaces and their implementations</li> 
   <li>DTO: Data Transfer Object - wrapper for model objects to unify the requests and responses in controllers</li>
-  <li>EXCEPTOIN: custom exception classes</li>
+  <li>EXCEPTION: custom exception classes</li>
   <li>LIB: contains email and password validators with custom annotations</li>
   <li>MODEL: POJOs that represent data</li>
-  <li>SECURITY: JWT configuration and CustomUserDetailsServise</li>
+  <li>SECURITY: JWT configuration and CustomUserDetailsService</li>
   <li>SERVICE: Service interfaces and their implementations that perform business logic</li>
-  <li>UTIL: Utility class used in a project to save DateTime pattern and initalize default users</li>
+  <li>UTIL: Utility class used in a project to save DateTime pattern and initialize default users</li>
   <li>RESOURCES: Non-Java files that save database configurations</li>
 </ul>
 
-## Entity Stucture
+## Entity Structure
 
-<img src="https://raw.githubusercontent.com/mate-academy/hibernate-configuration-hw/master/Hibernate_Cinema_Uml.png" alt="Entity Stucture"/>
+<img src="https://raw.githubusercontent.com/mate-academy/hibernate-configuration-hw/master/Hibernate_Cinema_Uml.png" alt="Entity Structure"/>
 
 ## Features employed in project
 <ul>
@@ -126,8 +129,7 @@ This project is a RESTful web application that serves as a simplified version of
   <li>Stateless</li>
   <li>SOLID</li>
   <li>Custom exceptions</li>
-  <li>Using JSON</li>
-  <li>Using JWT</li>
+  <li>JSON</li>
   <li>Role-based authorization</li>
 </ul>
 
