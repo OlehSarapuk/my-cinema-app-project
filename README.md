@@ -14,7 +14,6 @@ This project is a RESTful web application that serves as a simplified version of
       <li>view users by email</li>
       <li>complete order</li>
       <li>add movie session to your shopping cart</li>
-      <li></li>
     </ul>
   </ul>
   <ul>
@@ -35,7 +34,7 @@ This project is a RESTful web application that serves as a simplified version of
   </ul>
 </ul>
 
-## Get Started
+## How to run
 <ul>
   <li>Clone the project repository onto your local machine</li>
   <li>Install MySQL if needed</li>

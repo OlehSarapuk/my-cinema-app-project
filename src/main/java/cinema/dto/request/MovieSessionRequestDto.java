@@ -1,13 +1,13 @@
 package cinema.dto.request;
 
 import java.time.LocalDateTime;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
 
 public class MovieSessionRequestDto {
-    @Positive
+    @Min(0)
     private Long movieId;
-    @Positive
+    @Min(0)
     private Long cinemaHallId;
     @NotNull
     private LocalDateTime showTime;
