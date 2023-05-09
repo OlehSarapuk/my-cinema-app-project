@@ -40,7 +40,7 @@ This project is a RESTful web application that serves as a simplified version of
   <li>Install MySQL if needed</li>
   <li>Create new empty schema in your DB via command <code>CREATE SCHEMA `cinema` DEFAULT CHARACTER SET utf8;</code></li>
   <li>Replace the values of the <code>YOUR_DRIVER</code>, <code>YOUR_DATABASE_URL</code>, <code>YOUR_USERNAME</code> and <code>YOUR_PASSWORD</code> properties 
-  with the appropriate values for your database setup in [db.properties](src/main/resources/db.properties)</li>
+  with the appropriate values for your database setup in <code>src/main/resources/db.properties</code></li>
   <li>Build the project using Maven: <code>mvn clean install</code></li>
   <li>Configure Apache Tomcat, select war-exploded artifact and set application context: "/"</li>
   <li>You can log in with an existing accounts<li>
@@ -50,6 +50,10 @@ This project is a RESTful web application that serves as a simplified version of
   </ul>
   <li>Or register a new user</li>
 </ul>
+
+### Project video presentation [LINK](https://youtu.be/F-ZwT98ZQnU)
+### Postman request collection [LINK](https://www.postman.com/olehsarapuk/workspace/my-cinema-app-project/collection/27139918-8e413109-6494-407f-aa52-22d0425b79d6?action=share&creator=27139918)
+<p>To start testing with this collection you need to fork it, create new environment(and set it as active)</p>
 
 ## Technologies
 <ul>
